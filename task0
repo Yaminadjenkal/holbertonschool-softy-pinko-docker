@@ -1,0 +1,11 @@
+# Use the latest Ubuntu image as the base
+FROM ubuntu:latest
+
+# Update APT package list
+RUN apt-get update
+
+# Upgrade installed packages
+RUN apt-get upgrade -y
+
+# Display "Hello, World!" when the container runs
+CMD echo "Hello, World!"
